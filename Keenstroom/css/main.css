@@ -1,0 +1,325 @@
+html, body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px){
+.responsiveremove{
+    font-size: 0px;
+    }
+
+}
+
+body {
+    background: rgb(6,16,54);
+    background: linear-gradient(148deg, #050922 0%, #6EE6C7 100%);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navimg {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+.navimg img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    position: relative;
+    left: 5%;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.bar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bar a {
+    margin-top: 20px;
+    text-decoration: underline transparent;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 1;
+    transition: .4s;
+}
+
+.bar i {
+    transition: .4s;
+}
+
+.bar a:hover {
+    text-decoration: underline #6EE6C7;
+}
+
+.bar a:hover i {
+    color: #6EE6C7;
+}
+
+/*                                 MAIN                            #F25F25                               */
+
+.main-home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+
+.main-text h1 {
+    width: 50%;
+    height: auto;
+}
+
+.main-games {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 1px solid purple; */
+}
+
+.gamebox {
+    position: relative;
+    margin: 2% 10px;
+    width: 8%;
+    height: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.gamebox img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: .5s;
+}
+
+.gamebox a {
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.gamebox:hover {
+    transform: scale(1.4);
+}
+
+.gamebox:hover img {
+    border-radius: 15%;
+}
+
+
+/*  HIER IS DE LOGIN PAGINAAAAAAAAAA                   #fd4ff5     */
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(6,16,54);
+    background: linear-gradient(148deg, #050922 0%, #d063fc 100%);
+}
+
+.btn-home {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 30px;
+    letter-spacing: 1;
+}
+
+.btn-home a {
+    color: white;
+    text-decoration: underline #FFFFFF;
+    transition: .4s;
+}
+
+.btn-home i {
+    transition: .4s;
+}
+
+.btn-home a:hover {
+    text-decoration: underline #6EE6C7;
+}
+
+.btn-home a:hover i {
+    color: #6EE6C7;
+}
+
+.in-log {
+    width: 40%;
+    height: 80%;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.in-log img {
+    width: 200px;
+    height: auto;
+}
+
+.form-inlog {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.inp, .inb {
+    /* border: 2px solid yellow; */
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.inb {
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.form-inlog input {
+    height: 40%;
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid white;
+    background-color: transparent;
+    margin-top: 5px;
+    transition: .4s;
+    color: white;
+    font-size: 20px;
+}
+
+.form-inlog input:focus {
+    outline: none;
+    color: grey;
+    background-color: transparent;
+}
+
+.form-inlog input::placeholder {
+    color: grey;
+}
+
+.form-inlog button {
+    width: 20%;
+    height: 7%;
+    border: thin;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px rgb(97, 97, 97);
+    transition: .3s;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.extra {
+    height: 30%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.streep {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 0;
+    border-top: 2px solid white;
+    border-radius: 50%;
+}
+
+.extra a button {
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 5px rgb(97, 97, 97);
+    border: thin;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.extra a {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 60%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.in-log button:hover {
+    background-color: #6EE6C7;
+    font-size: 17px;
+    color: white;
+}
+
+.in-log button:hover a {
+    color: white;
+}
